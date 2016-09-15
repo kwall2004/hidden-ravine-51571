@@ -1,7 +1,7 @@
 /**
- * VehicleController
+ * ClientController
  *
- * @description :: Server-side logic for managing vehicles
+ * @description :: Server-side logic for managing clients
  * @help        :: See http://sailsjs.org/#!/documentation/concepts/Controllers
  */
 
@@ -12,19 +12,19 @@ module.exports = {
 		var Model = actionUtil.parseModel(req);
 
 		var query = Model.find()
-		.where(actionUtil.parseCriteria(req))
-		.limit(actionUtil.parseLimit(req))
-		.skip(actionUtil.parseSkip(req))
-		.sort(actionUtil.parseSort(req));
+			.where(actionUtil.parseCriteria(req))
+			.limit(actionUtil.parseLimit(req))
+			.skip(actionUtil.parseSkip(req))
+			.sort(actionUtil.parseSort(req));
 
 		query = actionUtil.populateRequest(query, req);
-		query.exec(function (error, records) {
+		query.exec(function(error, records) {
 			if (error) {
 			return res.serverError(error);
 			}
 
 			Model.count(actionUtil.parseCriteria(req))
-			.exec(function (error, total) {
+			.exec(function(error, total) {
 				if (error) {
 				return res.serverError(error);
 				}
