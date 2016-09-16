@@ -12,21 +12,21 @@ module.exports = {
 		var Model = actionUtil.parseModel(req);
 
 		var query = Model.find()
-		.where(actionUtil.parseCriteria(req))
-		.limit(actionUtil.parseLimit(req))
-		.skip(actionUtil.parseSkip(req))
-		.sort(actionUtil.parseSort(req));
+			.where(actionUtil.parseCriteria(req))
+			.limit(actionUtil.parseLimit(req))
+			.skip(actionUtil.parseSkip(req))
+			.sort(actionUtil.parseSort(req));
 
 		query = actionUtil.populateRequest(query, req);
 		query.exec(function (error, records) {
 			if (error) {
-			return res.serverError(error);
+				return res.serverError(error);
 			}
 
 			Model.count(actionUtil.parseCriteria(req))
 			.exec(function (error, total) {
 				if (error) {
-				return res.serverError(error);
+					return res.serverError(error);
 				}
 
 				var data = {};
