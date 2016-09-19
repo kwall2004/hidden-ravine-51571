@@ -63,7 +63,7 @@ module.exports.connections = {
     // user: 'username', //optional
     // password: 'password', //optional
     // database: 'Vision' //optional
-    uri: MONGODB_URI
+    uri: process.env.MONGODB_URI
   },
 
   /***************************************************************************
