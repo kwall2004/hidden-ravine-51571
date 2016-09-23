@@ -9,8 +9,7 @@
     "rc": "1.0.1",
     "sails": "~0.12.4",
     "sails-disk": "~0.10.9",
-    "sails-mongo": "^0.12.1",
-    "sails-mysql": "^0.11.5"
+    "sails-mongo": "^0.12.1"
   },
   "scripts": {
     "debug": "node debug app.js",
@@ -19,8 +18,12 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/anonymous node/sails user/webpack-demo-api.git"
+    "url": "https://git.heroku.com/hidden-ravine-51571.git"
   },
   "author": "anonymous node/sails user",
-  "license": ""
+  "license": "",
+  "devDependencies": {
+    "eslint": "^3.5.0",
+    "jsonlint": "^1.6.2"
+  }
 }
