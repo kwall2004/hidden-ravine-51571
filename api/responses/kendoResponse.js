@@ -5,7 +5,6 @@ module.exports = function kendoResponse(data, count) {
 
   return res.json({
     data: data,
-    count: count,
-    test: 'test'
+    count: count
   });
 };
