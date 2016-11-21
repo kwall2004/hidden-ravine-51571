@@ -17,22 +17,20 @@ module.exports = {
    * environment (see config/connections.js and config/models.js )           *
    ***************************************************************************/
 
-  // models: {
-  //   connection: 'someMysqlServer'
-  // },
-
-  /***************************************************************************
-   * Set the port in the production environment to 80                        *
-   ***************************************************************************/
-
-  // port: 80,
-
-  /***************************************************************************
-   * Set the log level in production environment to "silent"                 *
-   ***************************************************************************/
-
-  // log: {
-  //   level: "silent"
-  // }
+  connections: {
+    visionMongoDBServer: {
+      adapter: 'sails-mongo',
+      // host: 'localhost',
+      // port: 27017,
+      // user: 'username', //optional
+      // password: 'password', //optional
+      // database: 'vision2' //optional
+      url: 'mongodb://heroku_9d3ppsr0:a706flgp82q7qenmd166qmvq8d@ds051655.mlab.com:51655/heroku_9d3ppsr0'
+    }
+  },
+  models: {
+    connection: 'visionMongoDBServer'
+  },
+  port: 2222,
 
 };
