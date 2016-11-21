@@ -28,9 +28,9 @@ module.exports.connections = {
   * Installed by default.                                                    *
   *                                                                          *
   ***************************************************************************/
-  // localDiskDb: {
-  //   adapter: 'sails-disk'
-  // },
+  localDiskDb: {
+    adapter: 'sails-disk'
+  },
 
   /***************************************************************************
   *                                                                          *
@@ -42,10 +42,10 @@ module.exports.connections = {
   ***************************************************************************/
   // someMysqlServer: {
   //   adapter: 'sails-mysql',
-  //   host: '192.168.53.120',
-  //   user: 'root', //optional
-  //   password: '.root4mysql', //optional
-  //   database: 'vts_stage' //optional
+  //   host: 'YOUR_MYSQL_SERVER_HOSTNAME_OR_IP_ADDRESS',
+  //   user: 'YOUR_MYSQL_USER', //optional
+  //   password: 'YOUR_MYSQL_PASSWORD', //optional
+  //   database: 'YOUR_MYSQL_DB' //optional
   // },
 
   /***************************************************************************
@@ -56,15 +56,14 @@ module.exports.connections = {
   * Run: npm install sails-mongo                                             *
   *                                                                          *
   ***************************************************************************/
-  someMongodbServer: {
-    adapter: 'sails-mongo',
-    // host: 'localhost',
-    // port: 27017,
-    // user: 'username', //optional
-    // password: 'password', //optional
-    // database: 'Vision' //optional
-    url: process.env.MONGODB_URI
-  },
+  // visionMongoDBServer: {
+  //   adapter: 'sails-mongo',
+  //   host: 'localhost',
+  //   port: 27017,
+  //   // user: 'username', //optional
+  //   // password: 'password', //optional
+  //   database: 'vision2' //optional
+  // },
 
   /***************************************************************************
   *                                                                          *

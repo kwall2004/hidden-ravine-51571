@@ -1,15 +1,35 @@
 {
-  "name": "webpack-demo-api",
+  "name": "API",
   "private": true,
   "version": "0.0.0",
   "description": "a Sails application",
   "keywords": [],
   "dependencies": {
+    "cryptr": "^1.0.0",
+    "ejs": "2.3.4",
+    "elasticsearch": "^11.0.1",
+    "grunt": "1.0.1",
+    "grunt-contrib-clean": "1.0.0",
+    "grunt-contrib-coffee": "1.0.0",
+    "grunt-contrib-concat": "1.0.1",
+    "grunt-contrib-copy": "1.0.0",
+    "grunt-contrib-cssmin": "1.0.1",
+    "grunt-contrib-jst": "1.0.0",
+    "grunt-contrib-less": "1.3.0",
+    "grunt-contrib-uglify": "1.0.1",
+    "grunt-contrib-watch": "1.0.0",
+    "grunt-sails-linker": "~0.10.1",
+    "grunt-sync": "0.5.2",
     "include-all": "~0.1.6",
+    "jsonwebtoken": "^5.7.0",
+    "lodash": "^3.10.1",
+    "moment": "^2.15.2",
+    "mongodb": "^2.2.11",
+    "pluralize": "^3.0.0",
     "rc": "1.0.1",
     "sails": "~0.12.4",
     "sails-disk": "~0.10.9",
-    "sails-mongo": "^0.12.1"
+    "sails-mongo": "*"
   },
   "scripts": {
     "debug": "node debug app.js",
@@ -18,12 +38,11 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "https://git.heroku.com/hidden-ravine-51571.git"
+    "url": "git://github.com/anonymous node/sails user/API.git"
   },
   "author": "anonymous node/sails user",
   "license": "",
   "devDependencies": {
-    "eslint": "^3.5.0",
-    "jsonlint": "^1.6.2"
+    "eslint": "^3.5.0"
   }
 }

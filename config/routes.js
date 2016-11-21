@@ -34,7 +34,7 @@ module.exports.routes = {
 
   '/': {
     view: 'homepage'
-  }
+  },
 
   /***************************************************************************
   *                                                                          *
@@ -46,4 +46,15 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
+  'GET /devices': 'DevicesController.find',
+  'GET /devices/:id': 'DevicesController.findOne',
+  'POST /devices': 'DevicesController.create',
+  'PUT /devices/:id': 'DevicesController.update',
+  'DELETE /devices/:id': 'DevicesController.destroy',
+  
+  'GET /config-files': 'ConfigFilesController.find',
+  'POST /config-files': 'ConfigFilesController.create',
+  'GET /messages/trips/:vehicleId/:date': 'MessagesController.getTrips',
+  'GET /messages/trip/:id': 'MessagesController.getTrip',
+  'GET /messages/last-trip-start/:vehicleId': 'MessagesController.getLastTripStart',
 };

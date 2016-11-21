@@ -8,6 +8,8 @@
 module.exports = {
 
   attributes: {
-
+    _id: {
+      type: 'objectid'
+    }
   }
 };
