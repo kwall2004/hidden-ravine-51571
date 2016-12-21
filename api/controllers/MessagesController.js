@@ -1,7 +1,7 @@
 var elasticsearch = require('elasticsearch');
 var moment = require('moment');
 
-var host = 'https://lo0l35z0:6mnvwo0j46ih3gym@fig-7632293.us-east-1.bonsaisearch.net';
+var host = 'https://zix2f09c:89ujd04zflm5n3xu@aralia-3045944.us-east-1.bonsaisearch.net';
 
 module.exports = {
 
